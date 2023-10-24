@@ -6,7 +6,7 @@
 #' @export
 #'
 #' @examples
-#' transcript('AGCTAACTG')
+#' transcribe('AGCTAACTG')
 transcribe <- function(dna_seq){
   rna_seq <- gsub("T", "U", dna_seq)
   return(rna_seq)
