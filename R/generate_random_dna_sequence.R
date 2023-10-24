@@ -1,4 +1,4 @@
-#' Title
+#' Generate random DNA
 #' Generate random DNA sequence
 #' @param length the length that the generated DNA seq should be
 #'
