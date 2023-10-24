@@ -18,7 +18,6 @@ Title
 Generate random DNA sequence
 }
 \examples{
-length = 1000
-generate_random_dna_sequence(length)
+generate_random_dna_sequence(1000)
 
 }
