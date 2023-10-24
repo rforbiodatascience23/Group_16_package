@@ -1,0 +1,3 @@
+DNA1 = 'AATTGGCC'
+
+DNA_codons(DNA1)
