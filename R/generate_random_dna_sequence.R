@@ -8,6 +8,9 @@
 #' @export
 #'
 #' @examples
+#' length = 1000
+#' generate_random_dna_sequence(length)
+#'
 generate_random_dna_sequence <- function(length){
   sequence <- sample(c("A", "T", "G", "C"), size = length, replace = TRUE)
   dna_sequence <- paste0(sequence, collapse = "")
