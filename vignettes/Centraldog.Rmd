@@ -1,6 +1,6 @@
 ---
 title: "Centraldog"
-output: rmarkdown::html_vignette
+output: rmarkdown::pdf_document
 vignette: >
   %\VignetteIndexEntry{Centraldog}
   %\VignetteEngine{knitr::rmarkdown}
@@ -29,7 +29,7 @@ The package is about the centrla dogma of molecular biology. The package include
 The function generates a DNA sequence of a give length:
 
 ```{r}
-DNA <- generate_random_dna_sequence(10)
+DNA <- generate_random_dna_sequence(100)
 DNA
 ```
 
@@ -38,9 +38,32 @@ DNA
 The function transcripts the DNA sequnce to RNA sequence:
 
 ```{r}
-trancript(DNA)
+RNA <- transcribe(DNA)
+RNA
 ```
 
+#### DNA_codons
+
+The function splits the sequence into codons.
+
 ```{r}
-prot_seq('AUA')
+codons <- DNA_codons(RNA)
+codons
+```
+
+#### prot_seq
+
+The function translate codons into amino acids.
+
+```{r}
+amino_acids <- prot_seq(codons)
+amino_acids
+```
+
+#### plot_amino_acid_counts
+
+The function the amino acids counts into bar plot
+
+```{r}
+plot_amino_acid_counts(amino_acids)
 ```
