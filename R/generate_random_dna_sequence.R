@@ -1,15 +1,13 @@
-
-
 #' Title
 #' Generate random DNA sequence
 #' @param length the length that the generated DNA seq should be
 #'
 #' @return returns a random generated DNA sequence
+#'
 #' @export
 #'
 #' @examples
-#' length = 1000
-#' generate_random_dna_sequence(length)
+#' generate_random_dna_sequence(1000)
 #'
 generate_random_dna_sequence <- function(length){
   sequence <- sample(c("A", "T", "G", "C"), size = length, replace = TRUE)

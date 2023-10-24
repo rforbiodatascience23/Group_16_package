@@ -17,3 +17,30 @@ knitr::opts_chunk$set(
 ```{r setup}
 library(Centraldog)
 ```
+
+## Description
+
+The package is about the centrla dogma of molecular biology. The package includes 5 distint functions: "generate_random_dna_sequence", "transcript", "DNA_codons", "prot_seq" and "plot_amino_acid_counts".
+
+### Function demonstration
+
+#### generate_random_dna_sequence
+
+The function generates a DNA sequence of a give length:
+
+```{r}
+DNA <- generate_random_dna_sequence(10)
+DNA
+```
+
+#### transcript
+
+The function transcripts the DNA sequnce to RNA sequence:
+
+```{r}
+trancript(DNA)
+```
+
+```{r}
+prot_seq('AUA')
+```

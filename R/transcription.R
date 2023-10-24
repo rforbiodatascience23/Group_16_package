@@ -7,7 +7,7 @@
 #'
 #' @examples
 #' transcript('AGCTAACTG')
-transcript <- function(dna_seq){
+transcribe <- function(dna_seq){
   rna_seq <- gsub("T", "U", dna_seq)
   return(rna_seq)
 }
