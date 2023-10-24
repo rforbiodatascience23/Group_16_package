@@ -17,3 +17,8 @@ returns a random generated DNA sequence
 Title
 Generate random DNA sequence
 }
+\examples{
+length = 1000
+generate_random_dna_sequence(length)
+
+}
