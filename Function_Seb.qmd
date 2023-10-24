@@ -1,0 +1,22 @@
+---
+title: "functions"
+format: html
+editor: visual
+---
+
+## Functions
+
+I made a function to return the amino acid sequence based on an RNA sequence string
+
+It requires the codon table named codon_table to work\
+1) defines codons as sequences of 3 characters in the input\
+2) translates each codon to an amino acid based on the table\
+3) returns the amino acid sequence in one string
+
+```{r}
+translate_rna_to_aa <- function(rna_sequence) {
+  codons <- strsplit(rna_sequence, "(?<=\\G...)", perl = TRUE)[[1]]
+  amino_acids <- sapply(codons, function(codon) codon_table[[codon]])
+  return(paste(amino_acids, collapse = ""))
+}
+```
